@@ -18,4 +18,19 @@ public class Uhr
     {
         return digital;
     }
+    
+    public void setMarke(String neuMarke)
+    {
+        marke = neuMarke;
+    }
+    
+    public void setDurchmesser(int neuDurchmesser)
+    {
+        durchmesser = neuDurchmesser;
+    }
+    
+    public void setDigital(boolean neuDigital)
+    {
+        digital = neuDigital;
+    }
 }
