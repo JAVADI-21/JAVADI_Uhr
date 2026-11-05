@@ -11,6 +11,11 @@ public class Uhr
     setDigital(neuDigital);
     }
     
+    public void printUhr()
+    {
+    System.out.println(marke + " Uhr: " + durchmesser + " mm - " + digital);
+    }
+    
     public String getMarke()
     {
         return marke;
