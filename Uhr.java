@@ -9,11 +9,7 @@ public class Uhr
     setMarke(neuMarke);
     setDurchmesser(neuDurchmesser);
     setDigital(neuDigital);
-    }
-    
-    public void printUhr()
-    {
-    System.out.println(marke + " Uhr: " + durchmesser + " mm - " + digital);
+    printUhr();
     }
     
     public String getMarke()
@@ -44,5 +40,10 @@ public class Uhr
     public void setDigital(boolean neuDigital)
     {
         digital = neuDigital;
+    }
+    
+    public void printUhr()
+    {
+    System.out.println(marke + " Uhr: " + durchmesser + " mm - " + digital);
     }
 }
