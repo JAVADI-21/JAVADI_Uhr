@@ -44,6 +44,13 @@ public class Uhr
     
     public void printUhr()
     {
-    System.out.println(marke + " Uhr: " + durchmesser + " mm - " + digital);
+        if (digital==true)
+        {
+        System.out.println(marke + " Uhr: " + durchmesser + " mm -  digital ");
+        }
+        else
+        {
+        System.out.println(marke + " Uhr: " + durchmesser + " mm -  analog ");
+        }
     }
 }
