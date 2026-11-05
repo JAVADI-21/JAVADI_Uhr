@@ -34,7 +34,15 @@ public class Uhr
     
     public void setDurchmesser(int neuDurchmesser)
     {
-        durchmesser = neuDurchmesser;
+        if (neuDurchmesser >= 1 && neuDurchmesser <= 100)
+        {
+            durchmesser = neuDurchmesser;
+        }
+        else
+        {
+            System.out.println("Fehler: Der Durchmesser muss zwischen 1 und 100 liegen.");
+            durchmesser = 1;
+        }
     }
     
     public void setDigital(boolean neuDigital)
