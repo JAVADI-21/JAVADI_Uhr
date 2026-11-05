@@ -4,6 +4,13 @@ public class Uhr
     private int durchmesser;
     private boolean digital;
     
+    public Uhr(String neuMarke, int neuDurchmesser, boolean neuDigital)
+    {
+    setMarke(neuMarke);
+    setDurchmesser(neuDurchmesser);
+    setDigital(neuDigital);
+    }
+    
     public String getMarke()
     {
         return marke;
