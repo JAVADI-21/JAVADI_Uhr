@@ -5,39 +5,39 @@ public class Uhr_09_MultipleConstructor
     private boolean wasserdicht = false;
     private int durchmesser = 1;
     private int preis = 90;
-    
+
     public Uhr_09_MultipleConstructor(String neuMarke, boolean neuDigital, boolean neuWasserdicht, int neuDurchmesser, int neuPreis)
     {
-        marke = neuMarke;
-        digital = neuDigital;
-        wasserdicht = neuWasserdicht;
-        durchmesser = neuDurchmesser;
-        preis = neuPreis;
+        setMarke(neuMarke);
+        setDigital(neuDigital);
+        setWasserdicht(neuWasserdicht);
+        setDurchmesser(neuDurchmesser);
+        setPreis(neuPreis);
     }
     
     public Uhr_09_MultipleConstructor(String neuMarke, boolean neuDigital, int neuDurchmesser)
     {
-        marke = neuMarke;
-        digital = neuDigital;
-        durchmesser = neuDurchmesser;
+        setMarke(neuMarke);
+        setDigital(neuDigital);
+        setDurchmesser(neuDurchmesser);
     }
     
     public Uhr_09_MultipleConstructor(String neuMarke, boolean neuDigital)
     {
-        marke = neuMarke;
-        digital = neuDigital;
+        setMarke(neuMarke);
+        setDigital(neuDigital);
     }
     
     public Uhr_09_MultipleConstructor(String neuMarke, int neuDurchmesser, boolean neuWasserdicht)
     {
-        marke = neuMarke;
-        durchmesser = neuDurchmesser;
-        wasserdicht = neuWasserdicht;
+        setMarke(neuMarke);
+        setDurchmesser(neuDurchmesser);
+        setWasserdicht(neuWasserdicht);
     }
     
     public Uhr_09_MultipleConstructor(String neuMarke)
     {
-        marke = neuMarke;
+        setMarke(neuMarke);
     }
     
     public Uhr_09_MultipleConstructor()
@@ -92,5 +92,9 @@ public class Uhr_09_MultipleConstructor
     public void setPreis(int neuPreis)
     {
         preis = neuPreis;
+    }
+    
+    public void printUhr()
+    {
     }
 }
