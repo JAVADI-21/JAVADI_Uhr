@@ -28,13 +28,6 @@ public class Uhr_09_MultipleConstructor
         digital = neuDigital;
     }
     
-    public Uhr_09_MultipleConstructor(String neuMarke, boolean neuWasserdicht, int neuDurchmesser)
-    {
-        marke = neuMarke;
-        wasserdicht = neuWasserdicht;
-        durchmesser = neuDurchmesser;
-    }
-    
     public Uhr_09_MultipleConstructor(String neuMarke, int neuDurchmesser, boolean neuWasserdicht)
     {
         marke = neuMarke;
@@ -46,4 +39,30 @@ public class Uhr_09_MultipleConstructor
     {
         marke = neuMarke;
     }
+    
+    public String getMarke()
+    {
+        return marke;
+    }
+    
+    public boolean getDigital()
+    {
+        return digital;
+    }
+    
+    public boolean getWasserdicht()
+    {
+        return wasserdicht;
+    }
+    
+    public int getDurchmesser()
+    {
+        return durchmesser;
+    }
+    
+    public int getPreis()
+    {
+        return preis;
+    }
+    
 }
