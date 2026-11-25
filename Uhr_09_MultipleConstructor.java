@@ -40,6 +40,10 @@ public class Uhr_09_MultipleConstructor
         marke = neuMarke;
     }
     
+    public Uhr_09_MultipleConstructor()
+    {
+    }
+    
     public String getMarke()
     {
         return marke;
@@ -65,4 +69,28 @@ public class Uhr_09_MultipleConstructor
         return preis;
     }
     
+    public void setMarke(String neuMarke)
+    {
+        marke = neuMarke;
+    }
+    
+    public void setDigital(boolean neuDigital)
+    {
+        digital = neuDigital;
+    }
+    
+    public void setWasserdicht(boolean neuWasserdicht)
+    {
+        wasserdicht = neuWasserdicht;
+    }
+    
+    public void setDurchmesser(int neuDurchmesser)
+    {
+        durchmesser = neuDurchmesser;
+    }
+    
+    public void setPreis(int neuPreis)
+    {
+        preis = neuPreis;
+    }
 }
