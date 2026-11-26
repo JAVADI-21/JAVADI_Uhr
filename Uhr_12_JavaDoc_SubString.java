@@ -13,10 +13,10 @@ public class Uhr_12_JavaDoc_SubString
     
     public String getMarke()
     {
-        return marke;
+         return marke.substring(marke.indexOf(" ") + 1);
     }
 
-    public int getDurchmesser()
+     public int getDurchmesser()
     {
         return durchmesser;
     }
@@ -39,5 +39,15 @@ public class Uhr_12_JavaDoc_SubString
     public void setDigital(boolean neuesDigital)
     {
         digital = neuesDigital;
+    }
+    
+    public String getLand()
+    {
+             if (marke.indexOf(" ") == -1)
+        {
+            System.out.println("Fehler: Kein Leerzeichen vorhanden.");
+            return "";
+        }
+            return marke.substring(0, marke.indexOf(" "));
     }
 }
