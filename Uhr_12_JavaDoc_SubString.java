@@ -9,5 +9,20 @@ public class Uhr_12_JavaDoc_SubString
         marke = neuMarke;
         durchmesser = neuDurchmesser;
         digital = neuDigital;
-    }    
+    }
+    
+    public String getMarke()
+    {
+        return marke;
+    }
+
+    public int getDurchmesser()
+    {
+        return durchmesser;
+    }
+
+    public boolean getDigital()
+    {
+        return digital;
+    }
 }
