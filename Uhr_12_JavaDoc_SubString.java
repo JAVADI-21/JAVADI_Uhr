@@ -25,4 +25,19 @@ public class Uhr_12_JavaDoc_SubString
     {
         return digital;
     }
+    
+    public void setMarke(String neueMarke)
+    {
+        marke = neueMarke;
+    }
+
+    public void setDurchmesser(int neuerDurchmesser)
+    {
+        durchmesser = neuerDurchmesser;
+    }
+
+    public void setDigital(boolean neuesDigital)
+    {
+        digital = neuesDigital;
+    }
 }
