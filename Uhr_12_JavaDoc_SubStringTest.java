@@ -18,4 +18,29 @@ public class Uhr_12_JavaDoc_SubStringTest
         
         assertEquals("Schweiz", uhr.getLand());
     }
+    
+    @Test
+    public void testGetMarke()
+    {
+        Uhr_12_JavaDoc_SubString uhr = new Uhr_12_JavaDoc_SubString("Schweiz Swatch", 40, true);
+
+        assertEquals("Swatch", uhr.getMarke());
+    }
+    
+    // TEST Ohne Leerzeichnen 
+    @Test
+    public void testGetLandOhneLeerzeichen()
+    {
+        Uhr_12_JavaDoc_SubString uhr = new Uhr_12_JavaDoc_SubString("Swatch", 40, true);
+
+        assertEquals("", uhr.getLand());
+    }
+    
+    @Test
+    public void testGetMarkeOhneLeerzeichen()
+    {
+        Uhr_12_JavaDoc_SubString uhr = new Uhr_12_JavaDoc_SubString("Swatch", 40, true);
+
+        assertEquals("", uhr.getMarke());
+    }
 }

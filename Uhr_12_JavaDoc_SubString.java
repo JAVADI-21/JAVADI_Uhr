@@ -13,7 +13,13 @@ public class Uhr_12_JavaDoc_SubString
     
     public String getMarke()
     {
-         return marke.substring(marke.indexOf(" ") + 1);
+        if (marke.indexOf(" ") == -1)
+        {
+            System.out.println("Fehler: Kein Leerzeichen vorhanden.");
+            return "";
+        }
+
+        return marke.substring(marke.indexOf(" ") + 1);
     }
 
      public int getDurchmesser()
